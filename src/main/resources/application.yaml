@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: e-banking security
+  datasource:
+    driver-class-name: org.postgresql.Driver
