@@ -14,7 +14,10 @@ public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "USERNAME")
     private String username;
+    @Column(name = "PASSWORD")
     private String password;
 
     @ManyToOne

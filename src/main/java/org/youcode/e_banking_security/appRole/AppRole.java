@@ -18,6 +18,7 @@ public class AppRole {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "NAME")
     private String name;
 
     @OneToMany(fetch = FetchType.EAGER , mappedBy = "role")
