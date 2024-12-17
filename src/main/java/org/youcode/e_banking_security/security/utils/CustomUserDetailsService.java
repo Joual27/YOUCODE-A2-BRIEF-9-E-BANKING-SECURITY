@@ -1,4 +1,4 @@
-package org.youcode.e_banking_security.security;
+package org.youcode.e_banking_security.security.utils;
 
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;

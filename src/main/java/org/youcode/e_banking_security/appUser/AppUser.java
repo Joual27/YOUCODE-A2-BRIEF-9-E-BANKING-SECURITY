@@ -10,6 +10,7 @@ import org.youcode.e_banking_security.appRole.AppRole;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "APP_USER")
 public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +24,5 @@ public class AppUser {
     @ManyToOne
     @JoinColumn(name = "ROLE_ID")
     private AppRole role;
-
 
 }

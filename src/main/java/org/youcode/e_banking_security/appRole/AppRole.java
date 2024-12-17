@@ -13,6 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "APP_ROLE")
 public class AppRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
