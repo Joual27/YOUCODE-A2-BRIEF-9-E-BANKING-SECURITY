@@ -2,6 +2,7 @@ package org.youcode.e_banking_security.admin.utils;
 
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.youcode.e_banking_security.appRole.AppRole;
@@ -11,6 +12,7 @@ import org.youcode.e_banking_security.appUser.AppUserDAO;
 
 @AllArgsConstructor
 @Component
+@Profile("!test")
 public class DefaultAdminInitializer implements CommandLineRunner {
 
     private final AppUserDAO appUserDAO;
